@@ -1,0 +1,485 @@
+Dlaczego każdy programista powinien poznać język Go
+
+Mateusz Dymiński
+Siili Solutions
+
+[[github.com/mateuszdyminski/whygo][github.com/mateuszdyminski/whygo]]
+@m_dyminski
+
+* Whoami
+
+Mateusz Dymiński:
+
+- Software Developer w Siili Solutions
+- 6+ lat doświadczenia *~dev*
+- od 3 lat Golang
+- jeden z organizatorów [[https://www.meetup.com/GoLang-User-Group-Wroclaw/?https=off][GLUG - GoLang User Group Wroclaw]]
+- Github: [[http://github.com/mateuszdyminski][github.com/mateuszdyminski]]
+- Twitter: [[http://twitter.com/m_dyminski][@m_dyminski]]
+- LinkedIn: [[http://linkedin.com/in/mdyminski][linkedin.com/in/mdyminski]]
+
+* Agenda
+
+1. Co to jest Go?
+2. Dlaczego Google stworzył język Go
+3. Charakterystyka języka Go
+4. Dlaczego Go jest super
+5. Podsumowanie
+
+* Co to jest GO?
+
+"Go - to język programowania udostępniony jako otwrte oprogramowanie, który pozwala tworzyć proste, niezawodne oraz wydajne aplikacje."
+
+Główne cechy:
+- Kompilowany
+- Statycznie typowany
+- Współbieżny
+- Prosty
+- Produktywny
+
+.link http://golang.org
+
+* Historia
+
+Prace koncepcyjne rozpoczęto pod koniec 2007.
+
+- Robert Griesemer, Rob Pike i Ken Thompson.
+- Ian Lance Taylor i Russ Cox.
+
+Kod upubliczniowy w 2009.
+
+Wersja 1.0 została wypuszczona w 2012
+
+Aktualna stabilna wersja 1.7.5 - 26.01.2017
+
+Najbliższy release 1.8 - 15.02.2017
+
+* Dlaczego powstał język GO?
+
+Go powstał jako odpowiedz na problemy w firmie tak wielkiej jak Google.
+
+Kiedy powstawał (2011):
+
+- 5000+ programistów w ponad 40 lokalizacjach
+- 20+ zmian na minute
+- 50% kodu zmieniało się każdego miesiąca
+- 50 milionów testów uruchamianych miesięcznie
+- 1 repozytorium
+
+* Google - obserwacje
+
+- Mniejszą ilość kodu jest łatwiej zrozumieć, ale nie działa to w przypadku rozległych hierarchii, przeciążania operatorów etc.
+- Kod jest częściej czytany niż pisany
+- Kod żyje dłużej niż zakładamy pisząc go
+- Osoba, która utrzymuje/testuje dany kod często nie jest autorem
+- W dużych organizacjach umiejętności programistów bywają różne
+- Prędkość procesorów nie rośnie już tak jak się spodziewano(prawo Moore'a)
+
+* Go
+
+Główne cele podczas projektowania języka:
+
+- Prostota
+- Czytelność
+- Łatwość nauki
+- Wbudowana współbieżność
+
+* Go - specyfikacja
+
+- Java 8 spec  - *788* stron PDF -> http://docs.oracle.com/javase/specs/jls/se8/jls8.pdf
+- Scala spec   - *191* stron PDF -> http://www.scala-lang.org/docu/files/ScalaReference.pdf
+- Python spec  - *150* stron PDF -> https://docs.python.org/3/reference/
+- Golang spec  - *51* stron PDF -> https://golang.org/ref/spec
+
+* Go a Java
+
+* Go i Java mają wiele wspólnego
+
+- Rodzina języków C (imperatywne)
+- Statyczna typizacja
+- Garbage collected
+- Memory safe (nil references, runtime bounds checks)
+- Zmienne są zawsze zainicjalizowane (zero/nil/false)
+- Metody
+- Interfejsy
+- Type assertions (`instanceof`)
+- Reflekcja
+
+* Go specjalnie nie posiada pewnych funkcjonalności
+
+- Nie ma klas
+- Nie ma konstruktorów
+- Nie ma dziedziczenia
+- Nie ma 'final'
+- Nie ma wyjątków
+- Nie ma adnotacji
+- Nie ma typów generycznych
+
+* Dlaczego nie ma tych funkcjonalności w Go?
+
+Czytelność i przejrzystość jest kluczowa.
+
+Osoba, która czyta kod musi dokłanie wiedzieć co dany kod robi.
+
+Kod pisany w Go jest dość brzydki, za to prawie zawsze wygląda tak samo.
+
+Szczegóły dotyczące decyzji podjętych na etapie specyfikacji języka:
+
+- [[http://commandcenter.blogspot.com/2012/06/less-is-exponentially-more.html][Less is exponentially more (Pike, 2012)]]
+- [[http://talks.golang.org/2012/splash.article][Go at Google: Language Design in the Service of Software Engineering (Pike, 2012)]]
+
+* Ktoś tego używa?
+
+* Ktoś tego używa?
+
+*Google*, Adobe, AeroFS, Aerospike, Apcera, Appbase, Basecamp, BBC, BBC Worldwide, *Bitbucket*, bitly, Booking.com, Canonical, CloudFlare, Cloud Foundry, Cockroach Labs, Codeship, Comcast, *CoreOS*, Couchbase, Crowdstrike, Dailymotion, *Datadog*, Datascale, Dell, *DigitalOcean*, Disqus, DNSimple, *Docker*, drone.io, *Dropbox*, *eBay*, Economist, *Facebook*, Fastly, General Electric Software, *GitHub*, Hailo, *HashiCorp*, Heroku, IBM, Imgur, *InfluxData*, Intel, Iron.io, JelloLabs, Keybase.io, Koding, Lovoo, Lyft, MaxCDN, Medium, Mesosphere, Microcosm, Minio, *MongoDB*, Mozilla, *Netflix*, New Relic, New York Times, Novartis, OpenShift, Parse.com, Percona, Pinterest, Pivotal, PocketList, pool.ntp.org, Rackspace, Reddit, Riot Games, SendGrid, SendHub, Shutterfly, *SoundCloud*, SoundHound, Sourcegraph, Space Monkey, *SpaceX*, Splice, Springer, *Square*, Stack Exchange, SteelSeries, Thomson Reuters Eikon, TIBCO, Tumblr, *Twitch*, Twitter, TweetQureet, *Uber*, VMware, Weave, Weaveworks, Wercker, Wikia, Workiva, *Yahoo*, Yandex, Yik Yak, Zalando, Zumba, Zynga
+
+* To byli wielcy
+
+* Reszta
+
+Google, 6Wunderkinder, 99designs, Abot, ActiveState, Acquia, adeven, Adobe, Adori, AeroFS, Aerospike, AgileBits, Airbrake, Airware, Apcera, Apeiron, Appbase, Append, Appoxy, AppsCode, Arista, Ardan, Aruba, Ascendant, Atatus, Avocet, Awake, Axioms, Basecamp, BBC, BBC, Beachfront, Beam, Beehively, Beme, Betable, Benzinga, BigCommerce, Bitbucket, bitly, Blippar, Blink, Bolt, bol, botvs, Booking, Bread, Bridgevine, Brightcove, Bringhub, BuySellAds, BuzzFeed, Byndr, Canonical, Carbon, Clearblade, Clever, CloudFlare, Cloud, CloudWalk, clypd, Cockroach, Codeship, Comcast, Conformal, Copper, CoreOS, Couchbase, Crashlytics, Crowdstrike, Cupcake, CURT, CustomerIO, Dailymotion, Datadog, Datascale, DeferPanic, Dell, DigitalOcean, Disqus, DNSimple, Docker, domainr, DotDashPay, DoubleDutch, Doximity, DramaFever, drone, Dropbox, eBay, Economist, Embedly, EMC, ERNIT, Everything, Facebook, Factom, Fastly, Foize, Flipboard, FLXOne, Fullstory, Gatherer, Gamegos, Gemfury, General, Gengo, Getty, GitHub, GlobalSign, Granify, GrayMeta, Grovo, Hailo, Happy, HashiCorp, HER,
+
+* Reszta
+
+Heroku, Home24, Hooklift, HyperDev, IBM, Igneous, Imagefly, Imgix, Imgur, InfluxData, Instela, Intel, identakid, Ionic, ISDC, Iron, JelloLabs, Jimdo, Jive, Jive, Karma, Kayako, Keybase, Kingsoft, Kochava, Koding, LabStack, Leader, Lean, Lincoln, LocalRaces, LogPacker, Lovoo, Luckie, Lyft, Magic, Maldive, MalwareBytes, MaxCDN, Medium, MediaMath, Mesosphere, Meta, Microcosm, Minio, Modcloth, Moovweb, MongoDB, Monsoon, Mozilla, MROffice, Namely, Netflix, New, New, Newspaper, Next, Nexway, Ninchat, Novartis, Odoscope, Ooyala, Opendoor, OpenShift, Ottemo, Outdoorsy, OvrClk, Oyster, Pachyderm, Packet, Pagoda, Pantheon, Parse, Partner, Percona, pet, Pinshape, Pinterest, Pivotal, PocketList, Points, pool, Poptip, Pressly, Pronovix, Public, Rackspace, Raintank, Rakuten, RapidLoop, Rawstream, Raygun, Reddit, ReelDx, Remember, Remind101, Rendered, Replicated, Repustate, ReverbNation, ReviewTrackers, Revolving, Riot, Room, Rounds, RueBaRue, Runscope, Sagan, Secret, Segment, SendGrid, SendHub, SessionM, Shopify, Showyou, Shutterfly, SignalFx, SmartyStreets, SmugMug,
+
+* Reszta
+
+Skimlinks, SoundCloud, SoundHound, Sourcegraph, Space, SpaceX, Splice, Springer, Square, StackEngine, Stack, Staffjoy, StatHat, Steals, SteelSeries, StorReduce, SumoLogic, SuperHuman, SyndicatePro, Tamber, Tapglue, Tapjoy, Teamwork, Teespring, Telit, Tendermint, TF2Stadium, The, Thisissoon, Thomson, thoughtbot, Thumbtack, TIBCO, Timehop, TinkerCad, Toggl, Torbit, Total, Transloadit, Treetop, Trisoft, Tumblr, Tune, TurboBytes, Twitch, Twitter, TweetQureet, Uber, Ulele, Umbel, Upskill, Undisclosed, Vertamedia, VerveMobile, VividCortex, VMware, VSCO, Weave, Weaveworks, Wercker, Whim, Wikia, Wireless, Workiva, Yahoo, Yandex, Yik, Zalando, Zenoss, ZITEC, Zumba, Zynga, Atlassian, Buildkite, Dgraph, OneConfig, Sajari, Gatherer, AppsCode, Telenor, Beauty, Benefício, Coderockr, Compufácil, FourTwo, GissOnline, Globo, Hotel, Jexia, Magazine, Mendelics, Moip, Neoway, Nic, Nuveo, Planrockr, Resultados, ServiceNet, SiBBr, TOTVS, Ulife, Universo, Walmart, Pronovix, Be, clouWay, Go2Mobi, Koho, Pressly, ThinkSquare, Wattpad, 500px, Prey, 163yun, Qiniu, Yeeuu, Nivas,
+
+* Reszta
+
+Rentlio, Wawandco, SYBO, Digikong, Objenious, Rive, Batch, IRI, Teads, Algolia, Bürkert, Fraugster, HaCon, HelloFresh, JustWatch, Streetspotr, Sixt, Weaveworks, PassKit, Pronovix, Betacraft, BookMyShow, C42, CodeIgnition, Company, Exotel, Fastah, GeekTrust, Gloop, Ithaka, Jabong, Josh, JusTickets, Kayako, Qwinix, Sahaj, Siminars, SoStronk, Synerzip, Techequity, Testbook, ThoughtWorks, Unbxd, Auditsi, Brodo, Bukalapak, Codemi, GO, Ice, HappyFresh, Kelir, Kudo, Lazada, LionJobs, Matahari, Magicsoft, Michael, Midtrans, Nodeflux, Pinjam, President, Qasico, RajaMall, Raydar, RebelWorks, RedtreeMobile, Rimbun, Sale, SAP, Tokopedia, Zelos, AlAlam, Aparat, Kikojas, Intercom, 353Solutions, BigPanda, Dragontail, Elastifile, EyeSight, Fiverr, Gett, ironSource, Jewish, JFrog, Nexar, PushApps, Protected, Rimoto, Rounds, StreamRail, Surge, TechedUp, uponit, Yodas, Yotpo, Hastega, Qurami, Trenìt, Cybozu, DeNA, eureka, Fenrir, HDE, Hatena, Mackerel, Intelligence, KAYAC, LINE, mediba, Mercari, Gaurun, Preferred, SensorBee, SAKURA, Arukas, Web, Sakura, Souzoh, Mercari,
+
+* Reszta
+
+Nulab, Bengo4, CloudSign, HEARTBEATS, happo, VOYAGE, Digitalidea, DATA, Segundamano, aspros, Emphatic, Avito, Jexia, localsensor, MessageBird, Nextail, Pocket, Poki, The, Wercker, Xebia, Yonego, Hapara, Vend, Weta, ULAPPH, EngageSPARK, allegro, hostit, Brainhub, CloudThing, Husar, AppGeneration, Uniplaces, Trisoft, ITooLabs, PostmanQ, Visionect, Grab, engageSPARK, Tokopedia, Pocketmath, Dwarves, alea, Bugfender, Cabify, jobandtalent, Ximdex, puzzlopia, Kiliaro, Min, Slagkryssaren, TV4, Greta, Booli, AgFlow, Centralway, Perron2, Proton, AIS, DTAC, Insightera, GramGames, Insider, ElifTech, GOV, HM, New, XTX, Badoo, Geckoboard, Restorepoint, Songkick, Sainsbury, Ryanair, Belua, Intern, Pusher, Tyk, Fortifi, Monzo, Weaveworks, StorageOS
+
+* Narzędzia napisane w Go
+
+- Docker
+- Kubernetes
+- Etcd
+- InfluxDB
+- Prometheus
+- Grafana
+- Gogs
+- Caddy
+- Consul
+
+* Każdy z Was używa Go
+
+- SPDY proxy dla Chrome
+- Serwery dl.google.com: for Chrome, ChromeOS, Android SDK, Earth, etc.
+- YouTube Vitess MySQL balancer
+
+* Dlaczego Go jest super
+
+* Podstawy
+
+* Go - Hello world
+
+.play code/hello.go
+
+* Go - Hello world
+
+.code code/hello.go
+
+Uruchamianie z cmd:
+
+    go run hello.go
+
+Tłumaczone jest na :
+
+    go build hello.go && ./hello
+
+* Go - Hello world http
+
+.play code/hello_http.go
+
+* Go - Hello world json
+
+.play code/hello_json.go
+
+* Go - współbieżność
+
+* Go - współbieżność
+
+.play code/con_basic_ill.go
+
+* Go - współbieżność
+
+.play code/con_basic.go
+
+* Go - współbieżność
+
+- Co to jest goroutine? Jest to część programu, wykonywana niezależnie, uruchamiana poprzez słowo kluczowe `go`.
+- Ma swój własny stos wywołań, który rośnie oraz maleje w zależności od potrzeb.
+- Jest bardzo lekka. Możemy mieć miliony goroutine w naszej aplikacji.
+- Goroutine to nie wątek.
+- Nasz program może mieć jeden wątek, a wciąż możemy mieć miliony goroutine.
+- Goroutine mają swój własny scheduler, który pozwala nam dynamicznie rozdzielać pracę pomiędzy goroutine'ami.
+- Smiało możemy nazywać je 'tanimi' wątkami.
+
+* Go - współbieżność - wątki a goroutines
+
+.image images/threads_model_mn.png
+
+* Go - współbieżność - komunikacja
+
+- Nasza główna goroutine w żaden sposób nie komunikowała się z nowo utworzoną goroutine'a. Założenie, że praca wykona się w ciągu sekundy jest bardzo 'kruche'.
+- Twórcy Go pomyśleli też o tym jak powinna wyglądać komunikacja pomiędzy goroutinami.
+- Do tego celu wykorzystano kanały(channels).
+
+* Go - współbieżność - channels
+
+Channel zapewnia komunikację między goroutine'ami
+
+    // Declaring and initializing.
+    var c chan int
+    c = make(chan int)
+
+    // or
+    c := make(chan int)
+
+    // Sending on a channel.
+    c <- 1
+
+    // Receiving from a channel.
+    // The "arrow" indicates the direction of data flow.
+    value = <-c
+
+* Go - współbieżność - channels
+
+.play code/channels_basic.go
+
+* Go - współbieżność - select
+
+.play code/select.go
+
+* Go - goroutines + channels + select
+
+* Google Search Service
+.image images/fanout.png 470 _
+
+* Google Search Service - http server
+
+.code code/fan-out.go /func main/,/^}/
+
+* Google Search Service - http handler
+
+.code code/fan-out.go /func searchFor/,/^}/
+
+* Google Search Service - search in particular backend
+
+.code code/fan-out.go /func searchInBackend/,/^}/
+
+* Google Search Service
+
+Demo:
+
+.play code/fan-out.go /func main/,/^}/
+
+Test:
+
+    http://localhost:9000/search?q=google
+
+albo:
+
+    hey -n 100 -c 10 http://localhost:9000/search?q=google
+
+* Go - performance
+
+* Go vs inne języki
+
+Szybsze:
+
+- Fortran
+- C++
+- C
+- Rust
+- Ada
+
+Porównywalna szybkość:
+
+- C#
+- Java
+- Scala
+- Swift
+
+żródło: [[http://benchmarksgame.alioth.debian.org/u64q/performance.php?test=nbody][http://benchmarksgame.alioth.debian.org/u64q/performance.php?test=nbody]]
+
+* Go - performance - przyśpiesza
+
+* Go - performance - GC
+
+* go 1.5
+
+.image images/gct1.png _ 900
+
+* go 1.6
+
+.image images/gct2.png _ 900
+
+* go 1.7
+
+.image images/gct4.png _ 900
+
+* go 1.8 (beta 1)
+
+.image images/gct5.png _ 700
+
+* Go - super prosty deploy
+
+* Go - statyczne binarki
+
+Komenda:
+
+    go build hello.go
+
+Tworzy statyczną binarkę, którą możemy uruchomić:
+
+    ls -alh
+
+Zwraca:
+
+    -rwxr-xr-x   1 md  staff   1.5M Feb  9 22:47 hello
+    -rw-r--r--   1 md  staff    75B Feb  9 22:32 hello.go
+
+* Go - cross-kompilacja
+
+Komenda:
+
+    go build hello.go
+
+Kompiluje nam naszą aplikacje do defaultowych architektury + systemu operacyjnego
+
+W moim wypadku:
+
+    GOARCH="amd64"
+    GOOS="darwin"
+
+
+Jeśli chcemy uruchomić aplikację na Windows'ie:
+
+    GOOS=windows GOARCH=amd64 go build hello.go
+
+Otrzymujemy:
+
+    -rwxr-xr-x   1 md  staff  1715200 Feb  9 23:05 hello.exe
+    -rw-r--r--   1 md  staff       75 Feb  9 22:32 hello.go
+
+* Go - małe zapotrzebowanie na pamięć
+
+Aplikację google service możemy zdockerować:
+
+.code code/Dockerfile
+
+Docker build & run:
+
+    docker build -t google .
+    docker run -d --link dummy1 --link dummy2 --link dummy3 -p 9000:9000 google
+
+Demo:
+
+    curl http://localhost:9000/search?q=test
+    docker ps & docker stats
+    hey -c 10 -n 100 http://localhost:9000/search?q=test
+
+* Go - ecosystem
+
+* Go - ecosystem - formatowanie kodu
+
+- Jedno wbudowane narzędzie
+- Nie ma kłótni o to jak ma wyglądać kod
+
+    gofmt -w .
+
+* Go - ecosystem - formatowanie kodu
+
+.image images/tabs_vs_spaces.png _ 800
+
+* Go - ecosystem - play golang
+
+.link https://play.golang.org/
+
+* Go - ecosystem - golang tour
+
+.link https://tour.golang.org/
+
+* Go - ecosystem - zależności
+
+.code code/log.go
+
+Zależności pobieramy za pomocą:
+
+    go get github.com/uber-go/zap
+
+* Go - ecosystem - benchmark
+
+Kod:
+
+.code code/fib/fib.go
+
+Benchmark:
+
+.code code/fib/fib_test.go
+
+* Go - ecosystem - benchmark
+
+Aby uruchomić benchmark:
+
+    go test -bench=. --benchmem
+
+Wynik:
+
+       md@md fib (master *+)$ go test -bench=. --benchmem
+       testing: warning: no tests to run
+       BenchmarkFib10-8   	 3000000	       403 ns/op	       0 B/op	       0 allocs/op
+       PASS
+       ok  	github.com/mateuszdyminski/whygo/code/fib	1.622s
+
+* Go - ecosystem - godoc
+
+Wszystkie dokumentacje w jednym miejscu:
+
+.link https://godoc.org/
+
+W popularnych repozytoriach znajdują się odwołania do godoc:
+
+.link https://github.com/uber-go/zap
+
+* Go - ecosystem - present
+
+.link https://godoc.org/golang.org/x/tools/present
+
+Prezentacja ta jest napisana w narzędziu `present`
+
+Aby uruchomić prezentację:
+
+    present
+
+* Go ma przyszłość
+
+.image images/future.jpg 560 _
+
+* Go - co dalej ?
+
+Golang tour
+
+.link http://tour.golang.org
+
+Materiały o nauce Go
+
+.link http://golang.org/wiki/Learn
+
+Community
+
+.link http://golang.org/project
+
+Wroclaw GLUG
+
+.link https://www.meetup.com/GoLang-User-Group-Wroclaw
+
+* Pytania ?
