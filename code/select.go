@@ -8,7 +8,7 @@ import (
 func main() {
 	done := time.NewTimer(time.Second * 10) // tworzymy channel, który zwróci wartość po 10 sekundach
 
-	// niekończona pętla
+	// nieskończona pętla
 	for {
 		select {
 		case <-time.After(time.Second * 1): // wysyłamy informację do channel co sekundę

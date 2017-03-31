@@ -50,9 +50,9 @@ Kod upubliczniowy w 2009.
 
 Wersja 1.0 została wypuszczona w 2012
 
-Aktualna stabilna wersja 1.7.5 - 26.01.2017
+Aktualna stabilna wersja 1.8 - 15.02.2017
 
-Najbliższy release 1.8 - 15.02.2017
+Następny release 1.9 - 08.2017
 
 * Dlaczego powstał język GO?
 
@@ -464,6 +464,11 @@ Aby uruchomić prezentację:
 
 .image images/future.jpg 560 _
 
+* I nieźle za to płacą
+
+.image images/top_paying.png 500 _
+Źródło: [[https://stackoverflow.com/insights/survey/2017/#top-paying-technologies][https://stackoverflow.com/insights/survey/2017/#top-paying-technologies]]
+
 * Go - co dalej ?
 
 Golang tour
@@ -480,6 +485,6 @@ Community
 
 Wroclaw GLUG
 
-.link https://www.meetup.com/GoLang-User-Group-Wroclaw
+.link https://www.meetup.com/GoWroc
 
 * Pytania ?
