@@ -1,9 +1,10 @@
 package main
 
 import (
-	"github.com/uber-go/zap"
 	"os"
 	"path"
+
+	"go.uber.org/zap"
 )
 
 func main() {
