@@ -13,12 +13,13 @@ Nokia
 Mateusz Dymiński:
 
 - Software Developer at Nokia
-- 6+ Java exp
-- 3+ Golang exp
+- 5+ Golang exp
 - One of organizer [[https://www.meetup.com/GoWroc][GoWroc - Golang Wroclaw Meetup]]
+- Page: [[https://mateuszdyminski.com][mateuszdyminski.com]]
 - Github: [[http://github.com/mateuszdyminski][github.com/mateuszdyminski]]
 - Twitter: [[http://twitter.com/m_dyminski][@m_dyminski]]
 - LinkedIn: [[http://linkedin.com/in/mdyminski][linkedin.com/in/mdyminski]]
+
 
 * Agenda
 
@@ -53,9 +54,9 @@ Open sourced in 2009.
 
 Version 1.0 published in 2012
 
-Current stable release 1.9.2 - 15.12.2017
+Current stable release 1.13.5 - 09.12.2019
 
-Next release 1.10 - 02.2018
+Next release 1.14 - 01.2020
 
 * Why Google created Golang?
 
@@ -183,7 +184,7 @@ Nulab, Bengo4, CloudSign, HEARTBEATS, happo, VOYAGE, Digitalidea, DATA, Segundam
 - InfluxDB
 - Prometheus
 - Grafana
-- Gogs
+- Traefik
 - Caddy
 - Consul
 
@@ -507,33 +508,13 @@ Golang tour
 Tutorials/resources to learn Go
 
 .link http://golang.org/wiki/Learn
+.link https://golang.org/doc/code.html
+.link https://golang.org/doc/effective_go.html
+.link https://github.com/golang/go/wiki/CodeReviewComments
+.link https://gobyexample.com/
 
-Community
+Wroclaw GoWroc
 
-.link http://golang.org/project
-
-Wroclaw GLUG
-
-.link https://www.meetup.com/GoWroc
-
-* Go in Neo
-
-- As far as I know there are already 3 microservices written in Golang
-- Neo is open for Golang
-- Go was proposed by people from Neo
-
-* Tips and tricks before Hackathon
-
-- To achieve best Docker image size use: 
-
-    golang:1.9.2-alpine 
-
-- To compile Go code from Docker alpine
-
-    CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build .
-
-- You can use Nokia's internal Docker registry:
-
-[[https://portus.docker-registry.eecloud.nsn-net.net][Portus]]
+.link https://meetup.com/GoWroc
 
 * Questions ?
